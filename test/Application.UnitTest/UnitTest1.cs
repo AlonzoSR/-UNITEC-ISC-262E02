@@ -1,6 +1,7 @@
 ﻿public class UnitTestApplication
 {
     // PRUEBA 1: PERÍMETRO DEL RECTÁNGULO
+    [Theory]
     [UnitTestRectanguloPerimetro] // Params: b(base), a(altura), esperado
     [InlineData(4, 2, 12)]
     [InlineData(10, 5, 30)]
@@ -22,7 +23,6 @@
     [InlineData(10, 0.1, 20.2)]
     [InlineData(8, 6, 28)]
     [InlineData(9, 3, 24)]
-
     public void CalcularPerimetroRectangulo_LadosValidos_Correcto(double lado_a, double lado_b, double expected)
     {
         // Act
@@ -34,7 +34,8 @@
     }
 
     // PRUEBA 2: ÁREA DEL RECTÁNGULO
-     [UnitTestRectanguloArea] // Params: b, a, esperado
+    [Theory]
+     [UnitTestRectanguloArea] // Para   ms: b, a, esperado
      [InlineData(4, 2, 8)]
      [InlineData(10, 5, 50)]
      [InlineData(1, 1, 1)]
@@ -55,7 +56,6 @@
      [InlineData(10, 0.1, 1)]
      [InlineData(8, 6, 48)]
      [InlineData(9, 3, 27)]
-
     public void CalcularAreaRectangulo_LadosValidos_Correcto(double lado_a, double lado_b, double expected)
     {
         // Arrange
@@ -68,6 +68,7 @@
     }
 
     // PRUEBA 3: VOLUMEN (PRISMA RECTANGULAR)
+    [Theory]
     [UnitTestRectanguloVolumen] // Params: area, hPrisma, esperado
     [InlineData(8, 10, 80)]
     [InlineData(50, 2, 100)]
