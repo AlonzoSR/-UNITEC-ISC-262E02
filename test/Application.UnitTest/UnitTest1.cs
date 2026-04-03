@@ -2,7 +2,6 @@
 {
     // PRUEBA 1: PERÍMETRO DEL RECTÁNGULO
     [Theory]
-    [UnitTestRectanguloPerimetro] // Params: b(base), a(altura), esperado
     [InlineData(4, 2, 12)]
     [InlineData(10, 5, 30)]
     [InlineData(1, 1, 4)]
@@ -35,7 +34,6 @@
 
     // PRUEBA 2: ÁREA DEL RECTÁNGULO
     [Theory]
-     [UnitTestRectanguloArea] // Para   ms: b, a, esperado
      [InlineData(4, 2, 8)]
      [InlineData(10, 5, 50)]
      [InlineData(1, 1, 1)]
@@ -69,7 +67,6 @@
 
     // PRUEBA 3: VOLUMEN (PRISMA RECTANGULAR)
     [Theory]
-    [UnitTestRectanguloVolumen] // Params: area, hPrisma, esperado
     [InlineData(8, 10, 80)]
     [InlineData(50, 2, 100)]
     [InlineData(1, 5, 5)]
