@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
-    <ProjectReference Include="..\Aplicacion262E05\Aplicacion262E02.csproj" />
+    <ProjectReference Include="..\Aplicacion262E02\Aplicacion262E02.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
